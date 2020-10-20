@@ -48,8 +48,14 @@ Person = [
         "name": "Maria",
         "gender": "Female"
     } ]
-
-let males = Person.filter(Person => Person.gender === "Male");
-console.log(males);
-let females = Person.filter(Person => Person.gender === "Female");
-console.log(females);
+function ArrayFilter(value){
+    if(value == "Males"){
+        let males = Person.filter(Person => Person.gender === "Male");
+        console.log(males);
+    }
+    else if(value == "Females"){
+        let females = Person.filter(Person => Person.gender === "Female");
+        console.log(females);
+    }
+}
+ArrayFilter("Females");
